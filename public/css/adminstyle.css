@@ -1,0 +1,146 @@
+/* ==================== App ================== */
+#app {
+    display: flex;
+}
+
+.overflow-auto {
+    overflow: auto;
+}
+
+.tool-bar {
+    display: none;
+}
+
+.active-table-row {
+    background-color: rgba(0,0,0,.075);
+}
+
+/* ================ Sidebar ===================== */
+nav {
+    overflow: hidden;
+    min-height: 100vh;
+    min-width: 200px;
+    transition: all 0.2s ease-in-out;
+}
+
+#nav-toggle-btn {
+    cursor: pointer;
+}
+
+#nav-toggle-btn {
+    font-size: 1.5em;
+}
+
+.nav-link {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+#cover {
+    height: 140px;
+}
+
+/* =============== Themes Styles ===============*/
+.bg-primary {
+    background-color: #2c9f1c !important;
+}
+
+a.bg-primary:focus,
+a.bg-primary:hover,
+button.bg-primary:focus,
+button.bg-primary:hover {
+    background-color: #2c9f1c !important;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    background-color: #f8f9fa;
+    color: rgba(0, 0, 0, .7);
+}
+
+/* =============== Utility ============ */
+.mat-box-shadow {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.heading-underline {
+    margin-top: 0px;
+    background-color: #2c9f1c;
+    width: 4rem;
+    height: 0.25rem;
+    display: inline-block;
+}
+
+.section-padding {
+    padding: 3rem 2rem 2rem 2rem;
+}
+
+.no-underline:hover {
+    text-decoration: none;
+}
+
+.material .material-bar:after,
+.material .material-bar:before {
+    background: #555555 !important;
+}
+
+section>.card-container {
+    background-color: transparent;
+    border: none;
+}
+
+.loader-container>.loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loader-container>.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+@-webkit-keyframes spinner-border {
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spinner-border {
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.spinner-border {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    vertical-align: text-bottom;
+    border: 0.25em solid currentColor;
+    border-right-color: transparent;
+    border-radius: 50%;
+    -webkit-animation: spinner-border .75s linear infinite;
+    animation: spinner-border .75s linear infinite;
+}
+
+/* =================== Blog ================ */
+#blog_content {
+    height: 400px;
+}
+
+.cover_img img {
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 0;
+}

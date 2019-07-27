@@ -1,0 +1,8 @@
+{
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#482228",
+        "titleBar.activeBackground": "#653038",
+        "titleBar.activeForeground": "#FCF9F9"
+    },
+    "php.validate.executablePath": "C:/xampp/php/php.exe"
+}
